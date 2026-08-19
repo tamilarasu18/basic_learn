@@ -52,3 +52,7 @@ One-off w-[37px] beats growing the theme with names nobody reuses.
 ## Promise.allSettled for partial-failure fanout
 
 Promise.all rejects on the first error and discards every result that already resolved.
+
+## Abort fetches on unmount
+
+Pass an AbortController signal, or a slow response resolves into a dead component.
