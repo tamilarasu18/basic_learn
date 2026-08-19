@@ -32,3 +32,7 @@ A GET in route.ts is static unless it reads a request value or sets dynamic = 'f
 ## useEffect cleanup runs on every rerun
 
 Return the teardown, not a promise - an async effect body silently skips cleanup.
+
+## Key by identity, never by index
+
+Index keys make React reuse the wrong node when the list reorders, stranding input state.
