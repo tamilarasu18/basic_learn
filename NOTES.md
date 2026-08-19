@@ -20,3 +20,7 @@ No useState/useEffect - they never hydrate. Push interactivity into a child mark
 ## generateStaticParams replaces getStaticPaths
 
 App Router prerenders dynamic segments from the array this returns at build time.
+
+## Colocate loading.tsx with the route
+
+Next wraps the segment in a Suspense boundary automatically - no manual fallback wiring.
