@@ -24,3 +24,7 @@ App Router prerenders dynamic segments from the array this returns at build time
 ## Colocate loading.tsx with the route
 
 Next wraps the segment in a Suspense boundary automatically - no manual fallback wiring.
+
+## Route handlers are cached by default
+
+A GET in route.ts is static unless it reads a request value or sets dynamic = 'force-dynamic'.
