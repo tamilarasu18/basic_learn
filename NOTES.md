@@ -40,3 +40,7 @@ Index keys make React reuse the wrong node when the list reorders, stranding inp
 ## useMemo is not a correctness tool
 
 It can be dropped at any time. If logic must run once, that belongs in a ref or an effect.
+
+## Zod parse at the boundary, infer inward
+
+z.infer<typeof Schema> gives one source of truth for both runtime and compile time.
