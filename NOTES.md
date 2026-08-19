@@ -16,3 +16,7 @@ const cfg = {...} satisfies Config validates the shape but keeps the narrow lite
 ## Server Components cannot use hooks
 
 No useState/useEffect - they never hydrate. Push interactivity into a child marked 'use client'.
+
+## generateStaticParams replaces getStaticPaths
+
+App Router prerenders dynamic segments from the array this returns at build time.
