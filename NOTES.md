@@ -36,3 +36,7 @@ Return the teardown, not a promise - an async effect body silently skips cleanup
 ## Key by identity, never by index
 
 Index keys make React reuse the wrong node when the list reorders, stranding input state.
+
+## useMemo is not a correctness tool
+
+It can be dropped at any time. If logic must run once, that belongs in a ref or an effect.
