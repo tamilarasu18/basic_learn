@@ -44,3 +44,7 @@ It can be dropped at any time. If logic must run once, that belongs in a ref or 
 ## Zod parse at the boundary, infer inward
 
 z.infer<typeof Schema> gives one source of truth for both runtime and compile time.
+
+## Tailwind: prefer arbitrary values over new config keys
+
+One-off w-[37px] beats growing the theme with names nobody reuses.
