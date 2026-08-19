@@ -48,3 +48,7 @@ z.infer<typeof Schema> gives one source of truth for both runtime and compile ti
 ## Tailwind: prefer arbitrary values over new config keys
 
 One-off w-[37px] beats growing the theme with names nobody reuses.
+
+## Promise.allSettled for partial-failure fanout
+
+Promise.all rejects on the first error and discards every result that already resolved.
