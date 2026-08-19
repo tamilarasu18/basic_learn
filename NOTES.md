@@ -12,3 +12,7 @@ unknown forces a check before use, so parsing errors surface at the edge instead
 ## satisfies keeps literal inference
 
 const cfg = {...} satisfies Config validates the shape but keeps the narrow literal types s Config would widen away.
+
+## Server Components cannot use hooks
+
+No useState/useEffect - they never hydrate. Push interactivity into a child marked 'use client'.
