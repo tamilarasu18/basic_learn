@@ -28,3 +28,7 @@ Next wraps the segment in a Suspense boundary automatically - no manual fallback
 ## Route handlers are cached by default
 
 A GET in route.ts is static unless it reads a request value or sets dynamic = 'force-dynamic'.
+
+## useEffect cleanup runs on every rerun
+
+Return the teardown, not a promise - an async effect body silently skips cleanup.
